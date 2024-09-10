@@ -1,0 +1,9 @@
+
+.container{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "top",
+      height: "100vh",
+      fontFamily: "Arial, sans-serif",
+      marginRight: '80%',
+    }
