@@ -22,7 +22,7 @@ const Timer = () => {
       if (isRunning) {
         const id = setInterval(() => {
           setTime(prevTime => prevTime + 1);
-        }, 10);
+        }, 1000);
         timerId.current = id;
         return () => clearInterval(id);
       } else {
@@ -58,12 +58,12 @@ const Timer = () => {
           
         </div>
       )
-
 }
 
 const styles = {
       display: "flex",
       flexDirection: "column",
+      // flex-grow: 1;
       alignItems: "top",
       height: "100vh",
       fontFamily: "Arial, sans-serif",
